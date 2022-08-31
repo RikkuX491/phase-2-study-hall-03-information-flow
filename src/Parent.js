@@ -60,16 +60,9 @@ function Parent(){
         setHamster(hamsters[randomNumber]);
     }
 
-    /* Refactor this code - Put the <div> along with the <img> <h2> <h3> and <button> elements in the Child component.
-     * Your app should still be working fine as it does with the elements in the Parent component.
-     */
-
     return (
         <div>
-            <img src={hamster.image}></img>
-            <h2>{hamster.name}</h2>
-            <h3>{hamster.occupation}</h3>
-            <button onClick={setRandomHamster}>Click to get a random hamster!</button>
+            <Child hamster={hamster} handleClick={setRandomHamster} />
         </div>
     );
 }

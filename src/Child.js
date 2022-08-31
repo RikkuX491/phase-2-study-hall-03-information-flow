@@ -6,10 +6,13 @@
  * and as long as there is some code that would change the Parent component's state in the function.
  */
 
-function Child(){
+function Child( {hamster, handleClick} ){
     return (
         <>
-        
+            <img src={hamster.image}></img>
+            <h2>{hamster.name}</h2>
+            <h3>{hamster.occupation}</h3>
+            <button onClick={handleClick}>Click to get a random hamster!</button>
         </>
     )
 }
