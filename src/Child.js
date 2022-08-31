@@ -9,7 +9,7 @@
 function Child( {hamster, handleClick} ){
     return (
         <>
-            <img src={hamster.image}></img>
+            <img src={hamster.image} alt="hamster"></img>
             <h2>{hamster.name}</h2>
             <h3>{hamster.occupation}</h3>
             <button onClick={handleClick}>Click to get a random hamster!</button>
